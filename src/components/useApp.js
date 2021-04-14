@@ -44,7 +44,7 @@ class UseApp extends Component {
 		return(
 			<main>
 				<div style={!this.props.isClicked ? this.props.lightMode : this.props.darkMode}>
-					<div className="wrapper">
+					<div className="useapp">
 						<div className="d-flex flex-column mx-auto wallet-container">
 							<button onClick={handleClick} className={this.props.isClicked ? "lightmodeButton mx-auto" : "darkmodeButton mx-auto"}>{this.state.connected}</button>
 

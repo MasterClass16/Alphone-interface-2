@@ -27,7 +27,11 @@
 	.wrapper{
 		width: 85%;
 		margin:  auto;
+	}
+	.useapp{
 		overflow-x: scroll;
+		width: 85%;
+		margin:  auto;
 	}
 	.hero-text p{
 		font: 1.5rem/2rem var(--primary-font);
@@ -297,15 +301,21 @@
 		margin: 2rem 0;
 		font-weight: 500;
 	}
+	.community-wrapper p{
+		width: 70%;
+	}
 	.team-paragraph{
 		width:  70%;
 	}
 	.card{
 		min-height: 300px;
 	}
+	.cards:last-child{
+		grid-column: span 2;
+	}
 }
 @media all and (min-width: 1024px){
-	.wrapper{
+	.wrapper, .useapp{
 		width: 90%;
 		margin:  auto;
 	}
@@ -322,19 +332,20 @@
 		font-weight: bold;
 		margin: 0 0 1rem 0;
 	}
+	.about-img{
+		padding: 2rem;
+		width: 100%;
+	}
+	.about-wrapper div{
+		width: 90%;
+	}
 	.card-container, .team-container{
 		grid-template-columns: repeat(3, 1fr)
-	}
-	.cards:last-child{
-		grid-column: span 2;
 	}
 	.cards{
 		padding: 1.5rem;
 	}
-	.key-features-wrapper, .team, .community-wrapper, .wallet-container{
-		padding: 4rem 0;
-	}
-	.about-section{
+	.key-features-wrapper, .team, .community-wrapper, .wallet-container, .about-section{
 		padding: 4rem 0;
 	}
 	.about-wrapper div p, .team-paragraph, .community-wrapper p{
@@ -372,9 +383,20 @@
 		font-weight: bold;
 		margin: 0 0 1rem 0;
 	}
+	.about-wrapper div{
+		width: 100%;
+	}
 	.about-wrapper div p, .team-paragraph, .community-wrapper p{
-		width: 70%;
+		width: 95%;
 		font-weight: 500;
+	}
+	.community-wrapper p{
+		width: 60%;
+	}
+	.about-img{
+		padding: 5rem;
+		width: 100%;
+		margin-top: -5rem;
 	}
 	.community-wrapper p  a {
 		color: currentcolor;
@@ -395,7 +417,7 @@
 	}
 }
 @media all and (min-width: 2500px){
-	.wrapper{
+	.wrapper, .useapp{
 		width: 60%;
 	}
 }

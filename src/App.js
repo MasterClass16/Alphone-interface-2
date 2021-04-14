@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 
 // components
 
@@ -45,31 +45,31 @@ class App extends Component {
     aboutCard: [
       {
         id: 0,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/keyfeatures4.png',
         heading: 'A special DeFi protocol',
         paragraph: '$ALPO is forked from $AMPL, a DeFi protocol with an elastic supply model. The total supply of $ALPO is constantly changing every day.'
       },
       {
         id: 1,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/keyfeatures2.png',
         heading: 'Non-Collaterized',
         paragraph: '$ALPO is an independent financial primitive that does not rely on centralized collateral or lenders of last resort. '
       },
       {
         id: 2,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/keyfeatures3.png',
         heading: 'Price target of 1$',
         paragraph: '$ALPO uses algorithmic approach to maintain base price of $1'
       },
       {
         id: 3,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/keyfeatures5.png',
        heading: 'Rebase Mechanism',
         paragraph: 'AlphOne translates price-volatility into supply-volatility. This means the number of ALPO tokens in user wallets automatically increases or decreases based on price to retain price target of $1'
       },
       {
         id: 4,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/keyfeatures1.png',
         heading: 'A special DeFi protocol',
         paragraph: '$ALPO is forked from $AMPL, a DeFi protocol with an elastic supply model. The total supply of $ALPO is constantly changing every day.'
       }

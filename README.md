@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# AlphOne Algorithm StableCoin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project puts your knowledge of Blockchain development course i.e Introduction to blockchain, DEFI, Smart Contracts, introduction to solidity, how to use chainIDE and BSC testnet, building smart contract, farming yield contract, stable coins etc.
 
-## Available Scripts
+## Built With
 
-In the project directory, you can run:
+- Solidity
+- Bootstrap
+- Web3js
+- Metamask
+- ChainIDE
+- BNB/BSC Testnet
 
-### `yarn start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To get this project up and running locally, you must already have ruby and rails plus the necessary gems installed on your computer
 
-### `yarn test`
+**simple steps set up on your local machine**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+- $ git clone `$ git clone https://github.com/MasterClass16/MC16Coin`
+- $ git checkout develop
+- Run `cd MC16Coin`
 
-### `yarn build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Run Tests
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Author
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+👤 **Indiya Reuben Yakubu**
 
-### `yarn eject`
+- Github: [cloud9n](https://github.com/cloud9n)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+👤 **Tovieye Moses Ozi**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Github: [ozimos](https://github.com/ozimos)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+👤 **Sharon Jebitok**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Github: [jebitok-dev](https://github.com/jebitok-dev)
 
-## Learn More
+👤 **Durotoye Oyerinde**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Github: [djacmarg](https://github.com/djacmarg)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Samuel Alayo**
 
-### Code Splitting
+- Github: [ojamzalayo ](https://github.com/ojamzalayo)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👤 **Alseyni Balde**
 
-### Analyzing the Bundle Size
+- Github: [alseyni](https://github.com/alseyni)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+👤 **Blessing Emmah**
 
-### Making a Progressive Web App
+- Github: [BlessingEmah](https://github.com/BlessingEmah)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+👤 **Ojemeh Progress Uzoma**
 
-### Advanced Configuration
+- Github: [Rex739](https://github.com/Rex739)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤝 Contributing
 
-### Deployment
+Contributions, issues and feature requests are always welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+I love meeting other developers, especially ones that give me advice on how to improve my work.
 
-### `yarn build` fails to minify
+Feel free to check the [issues page](https://github.com/MasterClass16/MC16Coin/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### How to Contribute
+
+To get a local copy up and running follow these simple example steps.
+
+```
+- Fork the repository
+- git clone https://github.com/your_username/MC16Coin
+- git checkout develop
+- git checkout -b branch name
+- $ rails db:create
+- $ rails db:migrate
+- git remote add upstream https://github.com/MasterClass16/MC16Coin
+- git pull upstream develop
+- git commit -m "commit message"
+- git push -u origin HEAD
+```
+
+## Show your support
+
+Finally, if you've read this far, don't forget to give this repo a ⭐️. They're free . . . I think.
+
+## Acknowledgments
+
+- [Binance](https://binance.org)
+- [White Matrix]()
+<!-- - Design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) -->

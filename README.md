@@ -5,7 +5,7 @@ This project puts your knowledge of Blockchain development course i.e Introducti
 ## Built With
 
 - Solidity
-- React
+- React js
 - Web3js
 - Metamask
 - ChainIDE

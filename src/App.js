@@ -78,7 +78,7 @@ class App extends Component {
     teamCard: [
       {
         id: 0,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/indiya.png',
         name: 'Indiya Reuben Yakubu',
         job: 'Developer',
         about: 'I am a Blockchain Product Manager, learning blockchain development in order to build impactful products in the blockchain space!',
@@ -98,17 +98,17 @@ class App extends Component {
       },
       {
         id: 2,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/rex.png',
         name: 'Ojemeh Progress Uzoma',
-        job: 'Frontend/Blockchain Engineer',
-        about: 'I am a Blockchain Product Manager, learning blockchain development in order to build impactful products in the blockchain space',
+        job: 'Front-End/Blockchain Engineer',
+        about: "With experience in web development, i'm building innovative, diverse Dapp that's brings the future closer ",
         twitter: 'https://twitter.com/ojemehprogrex',
         linkedin: 'https://www.linkedin.com/in/ojemeh-progress-459730190/',
         github: 'https://github.com/Rex739'
       },
       {
         id: 3,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/jebitok.png',
         name: 'Sharon Jebitok',
         job: 'Software Developer',
         about: 'Building my skills in Software Development & blockchain technology.',
@@ -118,7 +118,7 @@ class App extends Component {
       },
       {
         id: 4,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/durotoye.png',
         name: ' Durotoye Oyerinde',
         job: 'Full Stack Developer',
         about: 'With background in Mechanical Engineering and experience in capacity and Web development of roughly 15 years, I know that we are limited only if and when we limit ourselves.',
@@ -139,17 +139,17 @@ class App extends Component {
       {
         id: 6,
         image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
-        name: 'Samuel Alayo',
-        job: 'Developer',
-        about: 'I am a Blockchain Product Manager, learning blockchain development in order to build impactful products in the blockchain space',
-        twitter: '',
-        linkedin: '',
-        github: ''
+        name: 'Alseyni Balde',
+        job: 'IT Project Manager',
+        about: 'Passionate about new technologies, blockchain, cybersecurity',
+        twitter: 'https://twitter.com/Seinaly777',
+        linkedin: 'https://www.linkedin.com/in/alseyni-balde',
+        github: 'https://github.com/alseyni'
       },
       {
         id: 7,
         image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
-        name: 'Alseyni Balde',
+        name: 'Samuel Alayo',
         job: 'Developer',
         about: 'I am a Blockchain Product Manager, learning blockchain development in order to build impactful products in the blockchain space',
         twitter: '',
@@ -243,6 +243,8 @@ class App extends Component {
                   rightArrow= {rightArrow}
                   leftArrow= {leftArrow}
                   isClicked= {this.state.isClicked}
+                  lightLinkColor={lightLinkColor}
+                  darkLinkColor={darkLinkColor}
                 />)}
             />
           </Switch>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink, withRouter} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 class NavBar extends Component{
@@ -36,16 +37,16 @@ class NavBar extends Component{
 					</div>
 				</div>
 				<nav className={this.state.clicked ? 'nav1': 'nav'}>
-					<ul className="d-flex list-unstyled">
+					<ul className="d-flex list-unstyled m-0">
 						<li className="list-unstyled" onClick={handleClick}>
 							<NavLink exact to="/"><img src="images/logo.png" alt="company logo" className="logo"/></NavLink>
 						</li>
-						<li onClick={handleClick}><NavLink style={this.props.isClicked ? this.props.lightLinkColor : this.props.darkLinkColor} exact to="">Documentations</NavLink></li>
+						<li onClick={handleClick}><NavLink style={this.props.isClicked ? this.props.lightLinkColor : this.props.darkLinkColor} exact to="/documentation">Documentations</NavLink></li>
 						<div></div>
 						<li onClick={handleClick}><a style={this.props.isClicked ? this.props.lightLinkColor : this.props.darkLinkColor} href="https://github.com/MasterClass16" target="blackx">Github</a></li>
 						<div></div>
-						<li onClick={handleClick}><NavLink style={this.props.isClicked ? this.props.lightLinkColor : this.props.darkLinkColor} to="/services">Team</NavLink></li>
-						<li onClick={handleClick}><button className={this.props.isClicked ? "lightmodeButton" : "darkmodeButton"}><NavLink to="./useApp">Use AlphOne</NavLink></button></li>
+						<li onClick={handleClick}><Link to="/#team" style={this.props.isClicked ? this.props.lightLinkColor : this.props.darkLinkColor} animate={{offset: 0, duration: 500}}>Team</Link></li>
+						<li onClick={handleClick}><button className={this.props.isClicked ? "lightmodeButton" : "darkmodeButton"}><NavLink to="/useApp">Use AlphOne</NavLink></button></li>
 					</ul>
 				</nav>
 				<div className="desktop-nav">
@@ -55,10 +56,10 @@ class NavBar extends Component{
 								<NavLink exact to="/"><img src="images/logo.png" alt="company logo" className="logo mr-auto "/></NavLink>
 								<ul className="my-auto ml-2 list-unstyled"><li className="my-auto"><NavLink style={this.props.isClicked ? this.props.lightLinkColor : this.props.darkLinkColor} exact to ="/">AlphOne</NavLink></li></ul>
 							</li>
-							<li className="ml-auto my-auto"><NavLink style={this.props.isClicked ? this.props.lightLinkColor : this.props.darkLinkColor} to="">Documentations</NavLink></li>
+							<li className="ml-auto my-auto"><NavLink style={this.props.isClicked ? this.props.lightLinkColor : this.props.darkLinkColor} to="/documentation">Documentations</NavLink></li>
 							<li className="my-auto"><a style={this.props.isClicked ? this.props.lightLinkColor : this.props.darkLinkColor} href="https://github.com/MasterClass16" target="blackx">Github</a></li>
-							<li className="my-auto"><a style={this.props.isClicked ? this.props.lightLinkColor : this.props.darkLinkColor} href="#team">Team</a></li>
-							<li className="my-auto"><button className={this.props.isClicked ? "lightmodeButton" : "darkmodeButton"}><NavLink to="./useApp">Use AlphOne</NavLink></button></li>
+							<li className="my-auto"><Link to="/#team" style={this.props.isClicked ? this.props.lightLinkColor : this.props.darkLinkColor} animate={{offset: 0, duration: 500}}>Team</Link></li>
+							<li className="my-auto"><button className={this.props.isClicked ? "lightmodeButton" : "darkmodeButton"}><NavLink to="/useApp">Use AlphOne</NavLink></button></li>
 							<li onClick={this.props.switchMode}><img src={this.props.lightMode} alt="ok" width="20px"/></li>
 						</ul>
 					</nav>
@@ -66,7 +67,7 @@ class NavBar extends Component{
 			</header>
 		)
 	}
-	
+	       
 }
 
 export default withRouter(NavBar)

@@ -237,7 +237,6 @@
 		margin: 5rem auto;
 	}
 	aside ul li a{
-	/* 	color: var(--white); */
 		font-weight: bold;
 		font: 1rem/1.5rem var(--primary-font);
 
@@ -261,7 +260,17 @@
 		margin: auto;
 		height: 2px;
 	}
-	
+	.darkModeSideBar{
+		margin-left: -3600%;
+	}
+	.lightModeSideBar{
+		margin-left: 0;
+		width: 260%;
+	}
+	.sidebar-constant{
+		z-index: 2;
+		transition: all 0.2s ease-out;
+	}
 }
 @media all and (min-width: 320px){
 	.wallets button{
@@ -315,7 +324,7 @@
 	}
 }
 @media all and (min-width: 1024px){
-	.wrapper, .useapp{
+	.wrapper, .useapp, .docs{
 		width: 90%;
 		margin:  auto;
 	}
@@ -370,6 +379,31 @@
 	.wallets{
 		padding: 5rem 3rem;
 	}
+	.doc-wrapper{
+		width: 70%;
+		padding:0;
+		margin: auto;
+	}
+	.doc-content{
+		width: 90%;
+		/* padding: 0 2rem; */
+		margin: auto;
+	}
+	.sidebar{
+		width: 30%;
+		margin:0 auto;
+	}
+	.darkModeSideBar{
+		margin-left: 0;
+	}
+	.lightModeSideBar{
+		margin-left: 0;
+		width: 100%;
+		background: none;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+	}
 	
 }
 @media all and (min-width: 1440px){
@@ -415,9 +449,18 @@
 	.card{
 		min-height: 250px;
 	}
+	.doc-content{
+		width: 80%;
+	}
+	.doc-wrapper{
+		width: 100%;
+	}
+	.sidebar{
+		width: 50%;
+	}
 }
 @media all and (min-width: 2500px){
-	.wrapper, .useapp{
+	.wrapper, .useapp, .docs{
 		width: 60%;
 	}
 }

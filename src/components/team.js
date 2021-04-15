@@ -9,7 +9,7 @@ const Team = ({teamCard, twitter, github, linkedin}) => {
                         <div className="frontside">
                             <div className="card">
                                 <div className="card-body text-left">
-                                    <p><img className=" img-fluid" src={team.image}alt="card"/></p>
+                                    <p><img className=" img-fluid" src={team.image}alt="card" width="100px" height="100px"/></p>
                                     <h4 className="card-title">{team.name}</h4>
                                     <p className="card-text">{team.job}</p>
                                 </div>

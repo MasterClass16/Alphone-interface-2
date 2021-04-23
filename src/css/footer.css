@@ -31,7 +31,7 @@
 	.footer-wrapper{
 		width: 85%;
 		margin: auto;
-		overflow-x: scroll;
+		overflow: hidden;
 	}
 	.footer-wrapper ul li {
 		font: 0.9rem/1.25rem var(--primary-font);

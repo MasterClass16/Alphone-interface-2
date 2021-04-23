@@ -193,6 +193,9 @@
 	}
 	/* community */
 	/* use app */
+	.useapp{
+		overflow: hidden;
+	}
 	.wallet-container{
 		padding: 5rem 0;
 		overflow: hidden;

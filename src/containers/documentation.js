@@ -3,7 +3,7 @@ import StickyBox from "react-sticky-box";
 import {withRouter} from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import DocAphOne from '../components/docAphOne'
-import RoadMap from '../components/roadMap'
+import PriceStability from '../components/priceStability'
 
 
 const Documentation = ({isClicked, lightMode, darkMode, docsData, rightArrow, leftArrow, lightLinkColor, darkLinkColor}) => {
@@ -44,28 +44,20 @@ const Documentation = ({isClicked, lightMode, darkMode, docsData, rightArrow, le
 									
 					    			<li onClick={handleClick}><Link to="#alphone" style={isClicked ? lightLinkColor : darkLinkColor }>AlphOne</Link></li>
 					    			<div></div>
-					    			<li onClick={handleClick}><Link to="#roadmap" style={isClicked ? lightLinkColor : darkLinkColor }>Road Map</Link></li>
-					    			
-					    			<li onClick={handleClick}><Link to="#alphone" style={isClicked ? lightLinkColor : darkLinkColor }>Audits</Link></li>
-					    			
-					    			<li onClick={handleClick}><Link to="#roadmap" style={isClicked ? lightLinkColor : darkLinkColor }>Mechanism</Link></li>
-					    			
-					    			<li onClick={handleClick}><Link to="#alphone" style={isClicked ? lightLinkColor : darkLinkColor }>Support Desk</Link></li>
-					    			
-					    			<li onClick={handleClick}><Link to="#roadmap" style={isClicked ? lightLinkColor : darkLinkColor }>Files and Sources</Link></li>
-					    			<li onClick={handleClick}><Link to="#alphone" style={isClicked ? lightLinkColor : darkLinkColor }>Copyright and Licence</Link></li>
+					    			<li onClick={handleClick}><Link to="#stable-coins" style={isClicked ? lightLinkColor : darkLinkColor }>Stable Coins</Link></li>
+					    			<li onClick={handleClick}><Link to="#how-it-works" style={isClicked ? lightLinkColor : darkLinkColor }>How AlphOne Works</Link></li>
+					    			<li onClick={handleClick}><Link to="#advantages" style={isClicked ? lightLinkColor : darkLinkColor }>Advantages</Link></li>
+					    			<li onClick={handleClick}><Link to="#price-stability" style={isClicked ? lightLinkColor : darkLinkColor }>Price Stability</Link></li>
+					    			<li onClick={handleClick}><Link to="#minting" style={isClicked ? lightLinkColor : darkLinkColor }>Minting AlphOne</Link></li>
+					    			<li onClick={handleClick}><Link to="#oracles" style={isClicked ? lightLinkColor : darkLinkColor }>Pricing Oracles</Link></li>
 					    		</ul>
 					    	</aside>
 					    </StickyBox>
 					    <main className="doc-wrapper">
 					    	<div className="doc-content">
 					    		<div>
-					    			<DocAphOne id="alphone"/>
-					    			<RoadMap id="roadmap"/>
-					    			<DocAphOne id="alphone"/>
-					    			<RoadMap id="roadmap"/>
-					    			<DocAphOne id="alphone"/>
-					    			<RoadMap id="roadmap"/>
+					    			<DocAphOne/>
+					    			<PriceStability />
 					    		</div>
 					    	</div>
 					    </main>

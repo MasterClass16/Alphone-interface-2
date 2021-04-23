@@ -41,7 +41,7 @@
 	.hero-text{
 		padding: 10rem 0;
 	}
-	.hero-text h1, .key-features-header, .about-section h2, .team-wrapper h1, .community-wrapper h1 .docs-main h1{
+	.hero-text h1, .key-features-header, .about-section h2, .team-wrapper h1, .community-wrapper h1{
 		font: 2rem/2.5rem var(--primary-font);
 		font-weight: bold;
 		margin: 0 0 1rem 0;
@@ -59,7 +59,7 @@
 	}
 	.about-wrapper div p, .team-paragraph, .community-wrapper p, .docs-main p{
 		font: 1rem/1.5rem var(--primary-font);
-		font-weight: 500;
+		font-weight: 300;
 		margin: 2rem 0;
 	}
 	.about-img{
@@ -94,17 +94,17 @@
 		transform: scale(1.01, 1.01);
 	}
 	.cards h2, .card-title{
-		font: 1.25rem/1.5rem var(--primary-font);
+		font: 1rem/1.5rem var(--primary-font);
 		font-weight: bold;
 	}
-	.cards p, .address-container p, .smart-contract p{
+	.address-container p, .smart-contract p{
 		font: 1rem/1.5rem var(--primary-font);
-		font-weight: 500;
+		font-weight: 300;
 		margin: 2rem  0;
 	}
-	.card-text{
-		font: 1rem/1.4rem var(--primary-font);
-		font-weight: 500;
+	.card-text, .cards p{
+		font: 0.875rem/1.4rem var(--primary-font);
+		font-weight: 300;
 	}
 	/* team */
 	.image-flip:hover .backside,
@@ -187,14 +187,18 @@
 		margin: 0 0 1rem 0;
 		letter-spacing: 0.04em;
 	}
+
 	.card{
-		min-height: 280px;
+		min-height: 290px;
 	}
 	/* community */
 	/* use app */
 	.wallet-container{
 		padding: 5rem 0;
-		overflow-x: scroll;
+		overflow: hidden;
+	}
+	.wallet-container::-webkit-scrollbar{
+		background: none;
 	}
 	.wallets{
 		background: var(--light-grey);
@@ -222,8 +226,15 @@
 		margin-top: -3.5rem;
 	}
 	.address-container{
-		overflow-x: scroll
+		overflow: hidden;
 	}
+	.address-container p{
+		word-break: break-all;
+	}
+	.address-container::-webkit-scrollbar{
+		background: transparent;
+	}
+
 	.smart-contract{
 		margin: 2rem 0;
 	}
@@ -236,9 +247,17 @@
 		padding: 0 2rem 0 0;
 		margin: 5rem auto;
 	}
+	.docs-main h1{
+		font: 2rem/1.5rem var(--primary-font);
+		font-weight: bold;	
+	}
+	.docs-main h2{
+		font: 1.2rem/1rem var(--primary-font);
+		font-weight: 700;
+	}
 	aside ul li a{
-		font-weight: bold;
 		font: 1rem/1.5rem var(--primary-font);
+		font-weight: bold;
 
 	}
 	aside ul li{
@@ -305,10 +324,10 @@
 	.about-img{
 		padding: 0 0 0 2rem;
 	}
-	.about-wrapper div p, .team-paragraph, .community-wrapper p{
-		font: 1.125rem/1.5rem var(--primary-font);
+	.about-wrapper div p, .team-paragraph, .community-wrapper p, .docs-main p{
+		font: 1.125rem/1.8rem var(--primary-font);
 		margin: 2rem 0;
-		font-weight: 500;
+		font-weight: 300;
 	}
 	.community-wrapper p{
 		width: 70%;
@@ -351,15 +370,23 @@
 	.card-container, .team-container{
 		grid-template-columns: repeat(3, 1fr)
 	}
+	.cards h2, .card-title{
+		font: 1.2rem/1.5rem var(--primary-font);
+		font-weight: bold;
+	}
+	.card-text, .cards p{
+		font: 1rem/1.4rem var(--primary-font);
+		font-weight: 300;
+	}
 	.cards{
 		padding: 1.5rem;
 	}
 	.key-features-wrapper, .team, .community-wrapper, .wallet-container, .about-section{
 		padding: 4rem 0;
 	}
-	.about-wrapper div p, .team-paragraph, .community-wrapper p{
-		font: 1.125rem/1.6rem var(--primary-font);
-		font-weight: 500;
+	.about-wrapper div p, .team-paragraph, .community-wrapper p, .docs-main p{
+		font: 1.125rem/2rem var(--primary-font);
+		font-weight: 300;
 	}
 	.team-wrapper h2, .community-wrapper h2{
 		font: 2rem/2.5rem var(--primary-font);
@@ -404,6 +431,10 @@
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
 	}
+	.hr{
+		width: 60%;
+		margin-left: 0;
+	}
 	
 }
 @media all and (min-width: 1440px){
@@ -422,7 +453,7 @@
 	}
 	.about-wrapper div p, .team-paragraph, .community-wrapper p{
 		width: 95%;
-		font-weight: 500;
+		font-weight: 300;
 	}
 	.community-wrapper p{
 		width: 60%;
@@ -457,6 +488,9 @@
 	}
 	.sidebar{
 		width: 50%;
+	}
+	.card{
+		min-width: 288px;
 	}
 }
 @media all and (min-width: 2500px){

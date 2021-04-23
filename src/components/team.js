@@ -8,7 +8,7 @@ const Team = ({teamCard, twitter, github, linkedin}) => {
                     <div className="mainflip flip-0">
                         <div className="frontside">
                             <div className="card">
-                                <div className="card-body text-left">
+                                <div className="card-body text-left d-flex flex-column justify-content-center">
                                     <p><img className=" img-fluid" src={team.image}alt="card" width="100px" height="100px"/></p>
                                     <h4 className="card-title">{team.name}</h4>
                                     <p className="card-text">{team.job}</p>
@@ -17,13 +17,13 @@ const Team = ({teamCard, twitter, github, linkedin}) => {
                         </div>
                         <div className="backside">
                             <div className="card">
-                                <div className="card-body text-left mt-4">
+                                <div className="card-body text-left d-flex flex-column justify-content-center">
                                     <h4 className="card-title">{team.name}</h4>
                                     <p className="card-text">{team.about}</p>
                                     <ul className="list-inline">
                                         <li className="list-inline-item">
                                             <a className="social-icon text-xs-center" target="blank" href={team.twitter}>
-                                                <img src={twitter} alt="github" width="20px"/>
+                                                <img src={twitter} alt="twitter" width="20px"/>
                                             </a>
                                         </li>
                                         <li className="list-inline-item">
@@ -33,7 +33,7 @@ const Team = ({teamCard, twitter, github, linkedin}) => {
                                         </li>
                                         <li className="list-inline-item">
                                             <a className="social-icon text-xs-center" target="blankss" href={team.linkedin}>
-                                               <img src={linkedin} alt="github" width="20px"/>
+                                               <img src={linkedin} alt="linkedin" width="20px"/>
                                             </a>
                                         </li>
                                     </ul>

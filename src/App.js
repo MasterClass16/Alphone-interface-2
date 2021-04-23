@@ -80,15 +80,15 @@ class App extends Component {
         id: 0,
         image: 'images/indiya.png',
         name: 'Indiya Reuben Yakubu',
-        job: 'Developer',
-        about: 'I am a Blockchain Product Manager, learning blockchain development in order to build impactful products in the blockchain space!',
-        twitter: '',
-        linkedin: '',
-        github: ''
+        job: 'Web Developer/Digital Marketing Strategist',
+        about: 'Experienced web developer, with little knowledge in computer Networking and cyber security. I like AI and fell in love with Blockchain development, and i am ready to take a deep dive into it, So help me Binance...',
+        twitter: 'https://twitter.com/ij_official',
+        linkedin: 'https://www.linkedin.com/in/indiya-reuben-478b8a84/',
+        github: 'https://github.com/cloud9n'
       },
       {
         id: 1,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/ozi.png',
         name: 'Tovieye Moses Ozi',
         job: 'Blockchain Engineer',
         about: 'A blockchain developer building innovative apps on smart contracts and expanding the scope of money in exciting ways',
@@ -128,17 +128,17 @@ class App extends Component {
       },
       {
         id: 5,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/blessing.png',
         name: 'Blessing Emmah',
-        job: 'Product manager/blockchain Developer',
+        job: 'Product manager/Blockchain Developer',
         about: 'I am a Blockchain Product Manager, learning blockchain development in order to build impactful products in the blockchain space',
-        twitter: '',
-        linkedin: '',
-        github: ''
+        twitter: 'https://twitter.com/Theblessingemah?s=08',
+        linkedin: 'https://www.linkedin.com/in/blessingemah',
+        github: 'https://github.com/BlessingEmah'
       },
       {
         id: 6,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/seilani.png',
         name: 'Alseyni Balde',
         job: 'IT Project Manager',
         about: 'Passionate about new technologies, blockchain, cybersecurity',
@@ -150,11 +150,11 @@ class App extends Component {
         id: 7,
         image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
         name: 'Samuel Alayo',
-        job: 'Developer',
-        about: 'I am a Blockchain Product Manager, learning blockchain development in order to build impactful products in the blockchain space',
-        twitter: '',
-        linkedin: '',
-        github: ''
+        job: 'Data Analyst',
+        about: 'Interested in tech. Interested in tech. Interested in tech. Interested in tech. Interested in tech.',
+        twitter: 'https://twitter.com/ojamz_alayo',
+        linkedin: 'https://www.linkedin.com/in/ojamomi-samuel-21011614b',
+        github: 'https://github.com/ojamzalayo'
       }
     ],
     docs: [

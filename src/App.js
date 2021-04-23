@@ -88,7 +88,7 @@ class App extends Component {
       },
       {
         id: 1,
-        image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
+        image: 'images/tovieye.png',
         name: 'Tovieye Moses Ozi',
         job: 'Blockchain Engineer',
         about: 'A blockchain developer building innovative apps on smart contracts and expanding the scope of money in exciting ways',

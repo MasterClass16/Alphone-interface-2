@@ -36,6 +36,8 @@ import walletconnect from './icons/walletconnect.svg'
 import close from './icons/close.svg'
 import rightArrow from './icons/rightArrow.svg'
 import leftArrow from './icons/leftArrow.svg'
+import view from './icons/view.svg'
+import copy from './icons/copy.svg'
 
 class App extends Component {
   state = {
@@ -151,7 +153,7 @@ class App extends Component {
         image: 'https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png',
         name: 'Samuel Alayo',
         job: 'Data Analyst',
-        about: 'Interested in tech. Interested in tech. Interested in tech. Interested in tech. Interested in tech.',
+        about: 'A python developer highly interested in blockchain technology. I am trying to grasp Javascript.',
         twitter: 'https://twitter.com/ojamz_alayo',
         linkedin: 'https://www.linkedin.com/in/ojamomi-samuel-21011614b',
         github: 'https://github.com/ojamzalayo'
@@ -232,6 +234,8 @@ class App extends Component {
                   binancechain= {binancechain}
                   walletconnect= {walletconnect}
                   close= {close}
+                  view= {view}
+                  copy= {copy}
               />)}
             />
             <Route path="/documentation"

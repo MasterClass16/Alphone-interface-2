@@ -47,6 +47,7 @@ const Documentation = ({isClicked, lightMode, darkMode, docsData, rightArrow, le
 					    			<li onClick={handleClick}><Link to="#stable-coins" style={isClicked ? lightLinkColor : darkLinkColor }>Stable Coins</Link></li>
 					    			<li onClick={handleClick}><Link to="#how-it-works" style={isClicked ? lightLinkColor : darkLinkColor }>How AlphOne Works</Link></li>
 					    			<li onClick={handleClick}><Link to="#advantages" style={isClicked ? lightLinkColor : darkLinkColor }>Advantages</Link></li>
+					    			<li onClick={handleClick}><Link to="#roadMap" style={isClicked ? lightLinkColor : darkLinkColor }>Road Map</Link></li>
 					    			<li onClick={handleClick}><Link to="#price-stability" style={isClicked ? lightLinkColor : darkLinkColor }>Price Stability</Link></li>
 					    			<li onClick={handleClick}><Link to="#minting" style={isClicked ? lightLinkColor : darkLinkColor }>Minting AlphOne</Link></li>
 					    			<li onClick={handleClick}><Link to="#oracles" style={isClicked ? lightLinkColor : darkLinkColor }>Pricing Oracles</Link></li>

@@ -4,7 +4,6 @@ const PriceStability = () => {
 	return (
 		<section className="docs-main">
 			<h1 id="price-stability">Price Stability</h1>
-			<div><img src="" alt=""/></div>
 			<p>
 				Alphone uses a rebase mechanism to mint and redeemed for the value of $1. This process makes Alphone Demand and supply stable in the market.
 				It is keen to note that when the price of Alphone is above $1, users can mint it for $1 and sell the minted Alphone at the inflated market price.

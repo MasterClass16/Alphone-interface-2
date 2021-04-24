@@ -9,8 +9,8 @@ const DocAlphOne = () => {
 			<div><img src="" alt=""/></div>
 			<h2 id="stable-coins">Stable Coins</h2>
 			<p>
-				Stable coins are crytocurrencies designed to minimize the volatility of the price of the stabecoin. A stable coin can be pegged
-				to a commodity, Fiat currenncy or crytocurrency which are said to be backed, while those tied to an algorithm are refered to be algorithmic stablecoin or seigniorage-style(not backed). 
+				Stable coins are crytocurrencies designed to minimize the price volatility of the crytocurrencies. A stable coin can be pegged
+				to a commodity, Fiat currency or crytocurrency which are said to be backed, while those tied to an algorithm are refered to be algorithmic stablecoin or seigniorage-style(not backed). 
 			</p>
 
 			<p>
@@ -89,7 +89,13 @@ const DocAlphOne = () => {
 				countries like Nigeria, Egypt Ghana, Malawi mozambique are experiencing some level of inflation every year.
 				Alphone can serve as substitute for currencies for people living these demographies where there is severe economic instability. 
 
-			</p>		
+			</p>
+			<h1 id="roadMap">RoadMap</h1>
+			<div className="w-100">
+				<img src="images/roadmap.png" alt="road map" className="roadmap"/>
+			</div>
+			
+
 		</section>
 	)
 }

@@ -5,10 +5,10 @@ const Community = ({isClicked}) => {
 		<section className="community-wrapper">
 			<h1>Our Community</h1>
                   <p>You can join the community by contributing with ideas, feedback, codes, design, support and dessemination of the AlphOne coin worldwide.</p>
-                  <p>Visit our <a href="https://github.com/MasterClass16">Github</a> page to be a developer.</p>
+                  <p>Visit our <a href="https://github.com/MasterClass16" target="sbalck">Github</a> page to be a developer.</p>
                   <p>You are welcome to discuss any project related to AlphOne with our friendly community in our Forums.</p>
                   <p>Any contribution will be welcome.</p>
-                  <button className={isClicked ? "lightmodeButton" : "darkmodeButton"}><a href="dd">Join Our Community</a></button>
+                  <button className={isClicked ? "lightmodeButton" : "darkmodeButton"}><a href="https://t.me/alph_One" target="bla_nck">Join Our Community</a></button>
 		</section>
 	)
 }

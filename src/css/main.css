@@ -23,6 +23,28 @@
 * button{
 	outline: none;
 }
+pre{
+	overflow-x: hidden;
+}
+.preDark, .preDark a{
+	cursor: pointer;
+	color: var(--white);
+}
+.preLight, .preLight a{
+	color: var(--black);
+}
+.fadeout{
+	animation: 1s fade;
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
 @media all and (min-width: 0px) {
 	.wrapper{
 		width: 85%;
@@ -237,9 +259,18 @@
 	.address-container::-webkit-scrollbar{
 		background: transparent;
 	}
-
 	.smart-contract{
-		margin: 2rem 0;
+		margin: 5rem 0;
+	}
+	.hide-text.hide-opacity{
+		opacity: 0
+	}
+	.hide-text{
+		-webkit-transition: opacity 1s ease-in-out;
+	    -moz-transition: opacity 1s ease-in-out;
+	    -ms-transition: opacity 1s ease-in-out;
+	    -o-transition: opacity 1s ease-in-out;
+	    opacity: 1;
 	}
 	/* docs */
 	.doc-content{
@@ -251,12 +282,12 @@
 		margin: 5rem auto;
 	}
 	.docs-main h1{
-		font: 2rem/1.5rem var(--primary-font);
-		font-weight: bold;	
+		font: 1.5rem/1.5rem var(--primary-font);
+		font-weight: 500;	
 	}
 	.docs-main h2{
-		font: 1.2rem/1rem var(--primary-font);
-		font-weight: 700;
+		font: 1.2rem/1.5rem var(--primary-font);
+		font-weight: 500;
 	}
 	aside ul li a{
 		font: 1rem/1.5rem var(--primary-font);
@@ -292,6 +323,10 @@
 	.sidebar-constant{
 		z-index: 2;
 		transition: all 0.2s ease-out;
+	}
+	.roadmap{
+		width: 100%;
+		margin: 1rem 0;
 	}
 }
 @media all and (min-width: 320px){
@@ -437,6 +472,10 @@
 	.hr{
 		width: 60%;
 		margin-left: 0;
+	}
+	.smart-contract{
+		margin: 0;
+		padding: 5rem 0 10rem 0;
 	}
 	
 }

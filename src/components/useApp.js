@@ -8,7 +8,9 @@ class UseApp extends Component {
 		connected: "Connect Wallet",
 		currentAddress: "",
 		symbol: "",
-		isConnected: false
+		isConnected: false,
+		copy: false,
+		copyStatus: "copied"
 	}
 	render(){
 		const handleClick = () =>{
@@ -55,6 +57,28 @@ class UseApp extends Component {
 				isConnected: true
 			})
 		}
+		const copy = () => {
+			navigator.clipboard.writeText(this.state.currentAddress);
+			this.setState({
+				copy: true
+				
+			}) 
+		}
+		const emptyText = () => {
+			this.setState({
+				copyStatus: ""
+			})
+		}
+		const Dnone = {
+			display: "none",
+		
+		}		
+
+		const Dblock ={
+			display: "block",
+			
+		}
+
 		return(
 			<main>
 				<div style={!this.props.isClicked ? this.props.lightMode : this.props.darkMode}>
@@ -70,11 +94,18 @@ class UseApp extends Component {
 							</ul>
 						</div>
 						<div className="smart-contract">
-							<button onClick={getBalance} className={this.props.isClicked ? "lightmodeButton mx-auto" : "darkmodeButton mx-auto"}>check balance</button>
 							<div className="address-container">
-								<p className="">Address : {this.state.currentAddress}</p>
+								<p className="">{this.state.currentAddress}</p>
+								<pre style={this.state.isConnected ? Dblock : Dnone} className={this.props.isClicked ? "preDark": "preLight"}>
+									<span><a href={"https://bscscan.com/address/"+this.state.currentAddress}>view on Bscscan</a><a href={"https://bscscan.com/address/"+this.state.currentAddress}><img src={this.props.view} alt=""/></a></span>
+									<span onClick={copy}> copy address<img src={this.props.copy} alt=""/><span className={this.state.copy ? "fadeout" : "d-none"} onMouseOut={this.state.copy ? emptyText : null }>{this.state.copyStatus}</span></span>
+								</pre>
 							</div>
-							<p className="">Balance : {this.state.setBalances + this.state.symbol}</p>
+							<span>
+								<button onClick={getBalance} className={this.props.isClicked ? "lightmodeButton mx-auto" : "darkmodeButton mx-auto"}>Balance</button><span className="ml-3"><b>{this.state.setBalances + "  " + this.state.symbol}</b></span>
+							</span>
+							
+							
 						</div>
 					</div>
 				</div>

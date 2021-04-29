@@ -71,12 +71,9 @@ class UseApp extends Component {
 		}
 		const Dnone = {
 			display: "none",
-		
-		}		
-
+		}
 		const Dblock ={
-			display: "block",
-			
+			display: "block",		
 		}
 
 		return(

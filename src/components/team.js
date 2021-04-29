@@ -47,9 +47,9 @@ const Team = ({teamCard, twitter, github, linkedin}) => {
     })
     return(
         <section className="team-wrapper" id="team">
-            <h1>Team</h1>
-            <h2>A Community-Based initative</h2>
-            <p className="team-paragraph">AlphOne is an open-source project designed by a global community of qualified developers, designers and blockchain crytographic traders/enthusiats who have committed to taking the AlphOne and making the decentralized technologies fully accessible to everybody.</p>
+            <h1 className="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">Team</h1>
+            <h2 className="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">A Community-Based initative</h2>
+            <p className="team-paragraph wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">AlphOne is an open-source project designed by a global community of qualified developers, designers and blockchain crytographic traders/enthusiats who have committed to taking the AlphOne and making the decentralized technologies fully accessible to everybody.</p>
             <div className="team-container">
                 {teamcards}
             </div>

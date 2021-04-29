@@ -14,7 +14,7 @@ const KeyFeatures= ({card, isClicked}) => {
 	})
 	return (
 		<section className="key-features-wrapper">
-			<h1 className="text-left key-features-header my-4">Key Features</h1>
+			<h1 className="text-left key-features-header my-4 wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.1s">Key Features</h1>
 			<div className="card-container">
 				{Card}
 			</div>

@@ -103,15 +103,12 @@ pre{
 	}
 	.cards{
 		padding: 1rem;
-		box-shadow: -3px 1px 7px -2px rgba(0,0,0,0.75);
-		-webkit-box-shadow: -3px 1px 7px -2px rgba(0,0,0,0.75);
-		-moz-box-shadow: -3px 1px 7px -2px rgba(0,0,0,0.75);
-		text-align: start;
+		border-radius: 5px;
 	}
 	.cards:hover{
-		box-shadow: -1px 1px 29px 2px rgba(0,0,0,0.75);
-		-webkit-box-shadow: -1px 1px 29px 2px rgba(0,0,0,0.75);
-		-moz-box-shadow: -1px 1px 29px 2px rgba(0,0,0,0.75);
+		box-shadow: -1px 1px 20px 2px rgba(0,0,0,0.75);
+		/* -webkit-box-shadow: -1px 1px 20px 1px rgba(0,0,0,0.75);
+		-moz-box-shadow: -1px 1px 20px 1px rgba(0,0,0,0.75); */
 		transition: 0.2s ease-in;
 		transform: scale(1.01, 1.01);
 	}
@@ -413,11 +410,14 @@ pre{
 		font-weight: bold;
 	}
 	.card-text, .cards p{
-		font: 1rem/1.4rem var(--primary-font);
+		font: 1rem/1.8rem var(--primary-font);
 		font-weight: 300;
 	}
 	.cards{
 		padding: 1.5rem;
+	}
+	.card{
+		min-height: 380px;
 	}
 	.key-features-wrapper, .team, .community-wrapper, .wallet-container, .about-section{
 		padding: 4rem 0;
@@ -520,7 +520,7 @@ pre{
 		background-repeat: no-repeat;
 	}
 	.card{
-		min-height: 250px;
+		min-height: 280px;
 	}
 	.doc-content{
 		width: 80%;
